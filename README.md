@@ -11,7 +11,7 @@ The code to create this example is [available here](https://github.com/emmarshal
 This [Quarto](https://quarto.org) extension can be installed using the following command:
 
 ``` bash
-quarto install extension emarshall/unl-quarto
+quarto install extension emarshall/unl-theme
 ```
 
 If you are unable to install Quarto extensions, you probably should [update Quarto](https://quarto.org/docs/get-started/).
@@ -21,7 +21,7 @@ If you are unable to install Quarto extensions, you probably should [update Quar
 After you install the template, use the following code on terminal to create a new directory with all files needed:
 
 ``` bash
-quarto use template emarshall/unl-quarto
+quarto use template emarshall/unl-theme
 ```
 
 ``` bash

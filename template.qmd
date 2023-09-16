@@ -1,23 +1,15 @@
 ---
 title: A Title
 subtitle: A subtitle
-from: markdown+emoji
-format: 
-  unl-revealjs: default
+format: unl-revealjs
 author:
   - name: Emma Marshall, JD, MA
     affiliations: University of Nebraska-Lincoln
 date: last-modified
-callout-appearance: simple
 ---
 
 ```{r setup, include=FALSE}
 library(tidyverse)
-
-options(
-  tibble.max_extra_cols = 6, 
-  tibble.width = 60
-)
 ```
 
 ::: red-box
@@ -183,27 +175,6 @@ knitr::kable(tab)
 ```
 :::
 :::
-
-## `DT::datatable()` {.small}
-
-With the `smaller` class in the slide!
-Ex: `## slide name {.small}`
-
-```{r}
-DT::datatable(tab, options = list(pageLength = 5))
-```
-
-## `gt::gt()`
-
-```{r}
-gt::gt(tab)
-```
-
-## `reactable::reactable()`
-
-```{r}
-reactable::reactable(tab)
-```
 
 ## Diagrams with Mermaid!
 <center>
