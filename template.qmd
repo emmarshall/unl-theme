@@ -1,26 +1,71 @@
 ---
 title: A Title
 subtitle: A subtitle
-format: unl-quarto-revealjs
+from: markdown+emoji
+execute:
+  cache: true
+format: 
+  unl-quarto-revealjs:
+    width: 1280
+    height: 720
 author:
-  - name: Your Name
-    affiliations: Your Institution
+  - name: Emma Marshall, JD, MA
+    affiliations: University of Nebraska-Lincoln
 date: last-modified
+callout-appearance: simple
 ---
 
 ```{r setup, include=FALSE}
+library(tidyverse)
+
 options(
   tibble.max_extra_cols = 6, 
   tibble.width = 60
 )
 ```
 
+::: red-box
+
+Centered box
+
+:corn: 
+
+To make a point or whatever
+
+:::
+
+## Boxes [3]{.circle}
+
+<br><br>
+
+::: info-box
+hello 
+:::
+
+<br>
+
+::: cream-box
+
+Centered box
+
+:corn: 
+
+To make a point or whatever
+
+:::
+## [Example 1]{.example} :corn: Here is how I can tell a story {auto-animate=true auto-animate-easing="ease-in-out"}
+
+::: info-box
+hello 
+:::
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished presentation.
 To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
 > This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+
 
 ## Bullets
 
@@ -45,11 +90,9 @@ You can embed code like this:
 
 You can also add `text marked as code`!
 
-# New topic! {background-color="#474747"}
 
-To make a slide like this, use:
+# New topic! {background-color="#474747"}{.empty}
 
-    # Title of slide {background-color="#474747"}
 
 ## Tabset example {#sec-summary}
 
@@ -65,7 +108,8 @@ More content here, for tabset 2 :)
 
 ## Incremental content
 
-*Hi!*
+
+*Animate Stuff*
 
 . . .
 
@@ -202,6 +246,8 @@ Cross-references
 
 the details for slide animations are in the section called [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
 
+<br><br>
+
 ::: {.fragment .fade-in}
 ::: {.fragment .highlight-red}
 ::: {.fragment .strike}
@@ -215,7 +261,7 @@ Fade in \> turn green \> strike \> fade out
 ----
 
 ::: r-fit-text
-[background images]{style="color: hotpink;"}
+[can customize text]{style="color: hotpink;"}
 :::
 
 ## .image-right

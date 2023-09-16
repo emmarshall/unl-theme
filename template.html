@@ -10,8 +10,8 @@
 <link href="template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.433">
 
-  <meta name="author" content="Your Name">
-  <meta name="dcterms.date" content="2023-08-28">
+  <meta name="author" content="Emma Marshall, JD, MA">
+  <meta name="dcterms.date" content="2023-09-15">
   <title>A Title</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -413,15 +413,42 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Your Name 
+Emma Marshall, JD, MA 
 </div>
         <p class="quarto-title-affiliation">
-            Your Institution
+            University of Nebraska-Lincoln
           </p>
     </div>
 </div>
 
-  <p class="date">August 28, 2023</p>
+  <p class="date">September 15, 2023</p>
+</section>
+<section class="slide level2">
+
+<div class="red-box">
+<p>Centered box</p>
+<p><span class="emoji" data-emoji="corn">🌽</span></p>
+<p>To make a point or whatever</p>
+</div>
+</section>
+<section id="boxes-3" class="slide level2">
+<h2>Boxes <span class="circle">3</span></h2>
+<p><br><br></p>
+<div class="info-box">
+<p>hello</p>
+</div>
+<p><br></p>
+<div class="cream-box">
+<p>Centered box</p>
+<p><span class="emoji" data-emoji="corn">🌽</span></p>
+<p>To make a point or whatever</p>
+</div>
+</section>
+<section id="example-1-here-is-how-i-can-tell-a-story" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title"><span class="example">Example 1</span> <span class="emoji" data-emoji="corn">🌽</span> Here is how I can tell a story</h2>
+<div class="info-box">
+<p>hello</p>
+</div>
 </section>
 <section id="quarto" class="slide level2">
 <h2>Quarto</h2>
@@ -444,7 +471,7 @@ Your Name
 <section id="code" class="slide level2">
 <h2>Code</h2>
 <p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell" data-layout-align="center">
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/unnamed-chunk-1_c2b0752556b868edd2b833b0b7088926">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
@@ -456,10 +483,9 @@ Your Name
 <p>You can also add <code>text marked as code</code>!</p>
 </section>
 <section>
-<section id="new-topic" class="title-slide slide level1 center" data-background-color="#474747">
-<h1>New topic!</h1>
-<p>To make a slide like this, use:</p>
-<pre><code># Title of slide {background-color="#474747"}</code></pre>
+<section id="new-topic-background-color474747" class="title-slide slide level1 empty center">
+<h1>New topic! {background-color=“#474747”}</h1>
+
 </section>
 <section id="sec-summary" class="slide level2">
 <h2>Tabset example</h2>
@@ -477,7 +503,7 @@ Your Name
 </section>
 <section id="incremental-content" class="slide level2">
 <h2>Incremental content</h2>
-<p><em>Hi!</em></p>
+<p><em>Animate Stuff</em></p>
 <div class="fragment">
 <p>Use <code>. . .</code> to separate content as an incremental slide!</p>
 </div>
@@ -506,19 +532,19 @@ Your Name
 </section>
 <section id="you-can-add-r-code" class="slide level2">
 <h2>You can add R code</h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="|2,4|5|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb4-3"><a href="#cb4-3"></a>g <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span> </span>
-<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> mass)) <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/unnamed-chunk-2_7fc54d248e8c2761dfd1cd67beaa9efb">
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="|2,4|5|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>g <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span> </span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> mass)) <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="and-show-the-results-as-well" class="slide level2">
 <h2>And show the results, as well :)</h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/unnamed-chunk-3_f34a759b4eab43367e3559adbe74edd0">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="template_files/figure-revealjs/unnamed-chunk-3-1.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
@@ -527,21 +553,21 @@ Your Name
 <h3 id="knitrkable"><code>knitr::kable()</code></h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>tab <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>  tidyr<span class="sc">::</span><span class="fu">drop_na</span>(species) <span class="sc">|&gt;</span> </span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">group_by</span>(species) <span class="sc">|&gt;</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb6-5"><a href="#cb6-5"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb6-6"><a href="#cb6-6"></a>    <span class="at">mean_heigth =</span> <span class="fu">round</span>(<span class="fu">mean</span>(height, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
-<span id="cb6-7"><a href="#cb6-7"></a>    <span class="at">mean_mass =</span> <span class="fu">round</span>(<span class="fu">mean</span>(mass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb6-8"><a href="#cb6-8"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb6-9"><a href="#cb6-9"></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> n, <span class="at">n =</span> <span class="dv">4</span>) </span>
-<span id="cb6-10"><a href="#cb6-10"></a></span>
-<span id="cb6-11"><a href="#cb6-11"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/kable-ex_866ae09d6d3e04d01275301227a45862">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>tab <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>  tidyr<span class="sc">::</span><span class="fu">drop_na</span>(species) <span class="sc">|&gt;</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">group_by</span>(species) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-5"><a href="#cb5-5"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="at">mean_heigth =</span> <span class="fu">round</span>(<span class="fu">mean</span>(height, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    <span class="at">mean_mass =</span> <span class="fu">round</span>(<span class="fu">mean</span>(mass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-8"><a href="#cb5-8"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> n, <span class="at">n =</span> <span class="dv">4</span>) </span>
+<span id="cb5-10"><a href="#cb5-10"></a></span>
+<span id="cb5-11"><a href="#cb5-11"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="cell" data-layout-align="center">
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/kable-ex_74b97bf3a5a3d0915707004bc651fa22">
 <div class="cell-output-display">
 <table>
 <thead>
@@ -611,38 +637,38 @@ Your Name
 <section id="dtdatatable" class="slide level2 small">
 <h2><code>DT::datatable()</code></h2>
 <p>With the <code>smaller</code> class in the slide! Ex: <code>## slide name {.small}</code></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(tab, <span class="at">options =</span> <span class="fu">list</span>(<span class="at">pageLength =</span> <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/unnamed-chunk-6_b3c11951da2b5cea764edc2b1e745331">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(tab, <span class="at">options =</span> <span class="fu">list</span>(<span class="at">pageLength =</span> <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9735f27b3daed63eff93" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-9735f27b3daed63eff93">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1deab2765863203f85bc" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1deab2765863203f85bc">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
 <section id="gtgt" class="slide level2">
 <h2><code>gt::gt()</code></h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>gt<span class="sc">::</span><span class="fu">gt</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/unnamed-chunk-7_b7b99577ef0b9077ca4046fd71d1d018">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>gt<span class="sc">::</span><span class="fu">gt</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="qstftukvaw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qstftukvaw table {
+<div id="ehpvffbfmt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ehpvffbfmt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qstftukvaw thead, #qstftukvaw tbody, #qstftukvaw tfoot, #qstftukvaw tr, #qstftukvaw td, #qstftukvaw th {
+#ehpvffbfmt thead, #ehpvffbfmt tbody, #ehpvffbfmt tfoot, #ehpvffbfmt tr, #ehpvffbfmt td, #ehpvffbfmt th {
   border-style: none;
 }
 
-#qstftukvaw p {
+#ehpvffbfmt p {
   margin: 0;
   padding: 0;
 }
 
-#qstftukvaw .gt_table {
+#ehpvffbfmt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -668,12 +694,12 @@ Your Name
   border-left-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_caption {
+#ehpvffbfmt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qstftukvaw .gt_title {
+#ehpvffbfmt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -685,7 +711,7 @@ Your Name
   border-bottom-width: 0;
 }
 
-#qstftukvaw .gt_subtitle {
+#ehpvffbfmt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -697,7 +723,7 @@ Your Name
   border-top-width: 0;
 }
 
-#qstftukvaw .gt_heading {
+#ehpvffbfmt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -709,13 +735,13 @@ Your Name
   border-right-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_bottom_border {
+#ehpvffbfmt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_col_headings {
+#ehpvffbfmt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -730,7 +756,7 @@ Your Name
   border-right-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_col_heading {
+#ehpvffbfmt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -750,7 +776,7 @@ Your Name
   overflow-x: hidden;
 }
 
-#qstftukvaw .gt_column_spanner_outer {
+#ehpvffbfmt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -762,15 +788,15 @@ Your Name
   padding-right: 4px;
 }
 
-#qstftukvaw .gt_column_spanner_outer:first-child {
+#ehpvffbfmt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qstftukvaw .gt_column_spanner_outer:last-child {
+#ehpvffbfmt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qstftukvaw .gt_column_spanner {
+#ehpvffbfmt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -782,11 +808,11 @@ Your Name
   width: 100%;
 }
 
-#qstftukvaw .gt_spanner_row {
+#ehpvffbfmt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qstftukvaw .gt_group_heading {
+#ehpvffbfmt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -812,7 +838,7 @@ Your Name
   text-align: left;
 }
 
-#qstftukvaw .gt_empty_group_heading {
+#ehpvffbfmt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -827,15 +853,15 @@ Your Name
   vertical-align: middle;
 }
 
-#qstftukvaw .gt_from_md > :first-child {
+#ehpvffbfmt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qstftukvaw .gt_from_md > :last-child {
+#ehpvffbfmt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qstftukvaw .gt_row {
+#ehpvffbfmt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -854,7 +880,7 @@ Your Name
   overflow-x: hidden;
 }
 
-#qstftukvaw .gt_stub {
+#ehpvffbfmt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -867,7 +893,7 @@ Your Name
   padding-right: 5px;
 }
 
-#qstftukvaw .gt_stub_row_group {
+#ehpvffbfmt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -881,15 +907,15 @@ Your Name
   vertical-align: top;
 }
 
-#qstftukvaw .gt_row_group_first td {
+#ehpvffbfmt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qstftukvaw .gt_row_group_first th {
+#ehpvffbfmt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qstftukvaw .gt_summary_row {
+#ehpvffbfmt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -899,16 +925,16 @@ Your Name
   padding-right: 5px;
 }
 
-#qstftukvaw .gt_first_summary_row {
+#ehpvffbfmt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_first_summary_row.thick {
+#ehpvffbfmt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qstftukvaw .gt_last_summary_row {
+#ehpvffbfmt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -918,7 +944,7 @@ Your Name
   border-bottom-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_grand_summary_row {
+#ehpvffbfmt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -928,7 +954,7 @@ Your Name
   padding-right: 5px;
 }
 
-#qstftukvaw .gt_first_grand_summary_row {
+#ehpvffbfmt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -938,7 +964,7 @@ Your Name
   border-top-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_last_grand_summary_row_top {
+#ehpvffbfmt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -948,11 +974,11 @@ Your Name
   border-bottom-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_striped {
+#ehpvffbfmt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qstftukvaw .gt_table_body {
+#ehpvffbfmt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -961,7 +987,7 @@ Your Name
   border-bottom-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_footnotes {
+#ehpvffbfmt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -975,7 +1001,7 @@ Your Name
   border-right-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_footnote {
+#ehpvffbfmt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -984,7 +1010,7 @@ Your Name
   padding-right: 5px;
 }
 
-#qstftukvaw .gt_sourcenotes {
+#ehpvffbfmt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -998,7 +1024,7 @@ Your Name
   border-right-color: #D3D3D3;
 }
 
-#qstftukvaw .gt_sourcenote {
+#ehpvffbfmt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1006,63 +1032,63 @@ Your Name
   padding-right: 5px;
 }
 
-#qstftukvaw .gt_left {
+#ehpvffbfmt .gt_left {
   text-align: left;
 }
 
-#qstftukvaw .gt_center {
+#ehpvffbfmt .gt_center {
   text-align: center;
 }
 
-#qstftukvaw .gt_right {
+#ehpvffbfmt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qstftukvaw .gt_font_normal {
+#ehpvffbfmt .gt_font_normal {
   font-weight: normal;
 }
 
-#qstftukvaw .gt_font_bold {
+#ehpvffbfmt .gt_font_bold {
   font-weight: bold;
 }
 
-#qstftukvaw .gt_font_italic {
+#ehpvffbfmt .gt_font_italic {
   font-style: italic;
 }
 
-#qstftukvaw .gt_super {
+#ehpvffbfmt .gt_super {
   font-size: 65%;
 }
 
-#qstftukvaw .gt_footnote_marks {
+#ehpvffbfmt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qstftukvaw .gt_asterisk {
+#ehpvffbfmt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qstftukvaw .gt_indent_1 {
+#ehpvffbfmt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qstftukvaw .gt_indent_2 {
+#ehpvffbfmt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qstftukvaw .gt_indent_3 {
+#ehpvffbfmt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qstftukvaw .gt_indent_4 {
+#ehpvffbfmt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qstftukvaw .gt_indent_5 {
+#ehpvffbfmt .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1119,12 +1145,12 @@ Your Name
 </section>
 <section id="reactablereactable" class="slide level2">
 <h2><code>reactable::reactable()</code></h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>reactable<span class="sc">::</span><span class="fu">reactable</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center" data-hash="template_cache/revealjs/unnamed-chunk-8_bcdc8bfbfa8f7f1e49d81cf763451980">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>reactable<span class="sc">::</span><span class="fu">reactable</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-4c47a6b0761d0feb164e" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-4c47a6b0761d0feb164e">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"id":"species","name":"species","type":"character"},{"id":"n","name":"n","type":"numeric"},{"id":"mean_heigth","name":"mean_heigth","type":"numeric"},{"id":"mean_mass","name":"mean_mass","type":"numeric"}],"dataKey":"89ab7199aa573a14d8d2fee5985b9f49"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c9b75b6c2f419c10057c" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c9b75b6c2f419c10057c">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"id":"species","name":"species","type":"character"},{"id":"n","name":"n","type":"numeric"},{"id":"mean_heigth","name":"mean_heigth","type":"numeric"},{"id":"mean_mass","name":"mean_mass","type":"numeric"}],"dataKey":"89ab7199aa573a14d8d2fee5985b9f49"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -1161,6 +1187,7 @@ Create using <a href="https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh
 <section id="fragments" class="slide level2">
 <h2>Fragments</h2>
 <p>the details for slide animations are in the section called <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">Fragments</a></p>
+<p><br><br></p>
 <div class="fragment fade-in">
 <div class="fragment highlight-red">
 <div class="fragment strike">
@@ -1174,7 +1201,7 @@ Create using <a href="https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh
 <section class="slide level2">
 
 <div class="r-fit-text">
-<p><span style="color: hotpink;">background images</span></p>
+<p><span style="color: hotpink;">can customize text</span></p>
 </div>
 </section>
 <section id="image-right" class="slide level2">
@@ -1201,7 +1228,7 @@ Create using <a href="https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh
 <section id="exporting-into-pdf" class="slide level2">
 <h2>Exporting into PDF</h2>
 <p>You can use the function <code>pagedown::chrome_print()</code> to print the HTML version into a PDF!</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>pagedown<span class="sc">::</span><span class="fu">chrome_print</span>(<span class="st">"path-to-file.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>pagedown<span class="sc">::</span><span class="fu">chrome_print</span>(<span class="st">"path-to-file.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img src="_extensions/unl-quarto/logo.svg" class="slide-logo r-stretch"><div class="footer footer-default">
 
@@ -1384,9 +1411,9 @@ Create using <a href="https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1280,
 
-        height: 700,
+        height: 720,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

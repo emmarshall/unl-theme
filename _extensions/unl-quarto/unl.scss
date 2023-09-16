@@ -5,6 +5,7 @@ $border-updown-width: 40px;
 
 // colors
 $unl-red: #d00000 !default;
+$unl-red-light: #F5cccc !default;
 $dark-grey: #404040 !default;
 $grey: #808080 !default;
 $unl-cream: #f5f1e7 !default;
@@ -24,18 +25,18 @@ $accent2: $yellow;
 $right-arrow: "\2192"; // Unicode character for right arrow
 
 // fonts
-  @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500);
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-$font-family-serif: 'DM Sans' serif !default;
+$font-family-serif: 'Manrope' serif !default;
 
 $presentation-font-size-root: 36px;
 $presentation-heading-color: $dark-steel !default;
 $presentation-heading-font-weight: 700;
 
 // headings
-$presentation-heading-font: 'Domine', sans-serif !default;
+$presentation-heading-font: 'Architects Daughter', sans-serif !default;
 
 $h1-font-size: 1.5em !default;
 $h2-font-size: 1.25em !default;
@@ -43,99 +44,205 @@ $h3-font-size: 1em !default;
 
 //code
 $code-color: $dark-steel !default;
-$font-family-monospace: 'Fira Sans','IBM Plex Mono', Monaco, monospace !default;
+$font-family-monospace: 'IBM Plex Mono', Monaco, monospace !default;
 
 // quarto variables
 $body-bg: #fff !default;
 $body-color: $dark-steel !default;
 $link-color: $unl-red !default;
+$presentation-heading-color: lighten($unl-red, 15%);
 
 /*-- scss:rules --*/
 
-.reveal a {
-  line-height: 1.5em;
+// headers
+.reveal h2 {
+	background-color:  #d00000;
+	padding: 5px 0px 5px 10px;
+	color: lighten($unl-red, 50%);
+	border-radius: 12px; // not a fan of rounded borders
 }
 
-.reveal p {
+
+// title slide
+.title-slide {
+	background-color: $unl-cream;
+	text-align: left;
+	border-top: 80px solid $unl-red; // do not change this, it implements a bumper
+}
+
+h1.title {
+	color: $unl-red;
+	font-size: 2.5em;
+	text-shadow: none;
+	font-weight: 600;
+	margin-left: 50px;
+	text-align: left;
+	// padding-top: 80px; // not a huge fan of the 80px drop
+}
+p.subtitle {
+	color: $body-color;
+	text-shadow: none;
+	font-weight: 400;
+	font-size: 1.5em;
+  margin-top: 0em;
+	margin-left: 50px;
+	text-align: left;
+}
+
+p.author,
+.quarto-title-author-name {
+  color: $body-color;
+  text-shadow: none;
   font-weight: 300;
-  margin-top: 1.25em;
+  font-size: 1.1em;
+  margin-bottom: -10px;
+  margin-top: 0px;
 }
 
-.reveal h3 {
-  color: $grey;
-  font-style: italic;
-  font-size: 1em;
-}
-
-.reveal h4 {
-  color: $accent2;
-  font-weight: 350;
-  margin-top: 1.25em;
-}
-
-// title and headings
-
-#title-slide {
-  text-align: left;
-
-  .title {
-    color: $unl-red;
-    font-weight: 700;
-  }
-
-  .subtitle {
-    color: $dark-steel;
-    font-size: 1.4em;
-    font-style: italic;
-    margin-top: 0em;
-  }
-
-  .institute,
-  .quarto-title-affiliation,
-  .quarto-title-author-email {
-    font-style: italic;
-      font-size: 70%;
-      color: $unl-red;
-  }
-
-  .author,
-  .quarto-title-author-name {
-    color: $body-color;
-    font-size: 0.9em;
-  }
-
-  .quarto-title-authors {
-    display: flex;
-    justify-content: left;
-
-    .quarto-title-author {
-      padding-left: 0em;
-      padding-right: 0em;
-      width: 100%;
-    }
-  }
-
-}
-
-
-.title h1 {
+.quarto-title-affiliation {
+  font-weight: bold; 
+  font-size: 0.9em;
   color: $unl-red;
-  font-size: 72px;
-  text-shadow: none;
-  vertical-align: bottom;
 }
 
-.subtitle {
-  color: $unl-red;
-  text-shadow: none;
-  font-size: 72px;
-  font-weight: bold;
+p.date {
+	color: $dark-steel;
+	text-shadow: none;
+	font-weight: 300;
+	font-size: 0.8em;
 }
 
-.quarto-title-authors {
-  color: $grey;
-  font-size: 64px;
+p.subtitle:after {
+	content: "";
+	display: block;
+	border: none;
+	background-color: $unl-red;
+	color: $unl-red;
+	height: 5px;
+	margin: 25px 0 25px;
+}
+
+
+// boxes & fun lists
+
+.red-box {
+  background-color: $unl-red-light;
+  padding: 25px;
+  border: 5px solid $unl-red;
+  text-align: center;
+  width: 80%;
+  margin-left: 5em;
   font-family: $presentation-heading-font;
+}
+
+
+.cream-box {
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 5px solid $dark-steel;
+  padding: 10px;
+  font-size: 20px;
+  background-color: $unl-cream;
+}
+
+.boxit {
+  background-color:$unl-cream;
+  font-size:0.8em;
+  padding:30px;
+  width:80%;
+  margin:auto;
+}
+
+
+.box {
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 5px solid $unl-red;
+  padding: 10px;
+  font-size: 26px;
+  background-color: #E6E6E6;
+}
+
+.font-small {
+  font-size: 1.2rem;
+}
+
+.info-box {
+  margin-top: 10px;
+  margin-right: 10px;
+  border-left: 10px solid $unl-red;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $unl-red-light;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 1em;
+    line-height: 1em;
+    padding: 3px;
+    display: inline-block;
+    background: $dark-steel;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: $presentation-heading-font;
+}
+
+.example {
+  background-color: $dark-steel;
+  color: white;
+  font-size: 0.3em;
+  padding: 10px;
+  font-family: $presentation-heading-font;
+  vertical-align: middle;
+}
+
+
+// Section break slide
+hr,
+h1::after {
+	content: "";
+	display: block;
+	border: none;
+	background-color: $unl-red;
+	color: $unl-red;
+	height: 4px;
+	margin: 1em 10px 0 10px;
+}
+
+// Override h1 style for title slide (remove section break slide style)
+hr,
+h1.title::after {
+	content: "";
+	display: block;
+	border: none;
+	background-color: transparent !important;
+	color: transparent !important;
+	height: 0px;
+	margin: 0px !important;
+}
+
+// Custom class to allow for blank slides
+.empty h1::after, .empty h2 {
+    content: "";
+    display: none;
+    border: none;
+    height: 0px;
+    margin: 0 auto; //reset
+}
+
+h2::after.title {
+	margin: 10px 15px 35px 0;
+}
+
+.reveal .slide-number a {
+	font-size: 120%;
+	background-color: $light-cream;
+	border-radius: 12px;
+	padding: 5px;
 }
 
 .footer {
@@ -153,6 +260,10 @@ $link-color: $unl-red !default;
 .reveal .footer {
     color: $dark-steel;
 }
+
+
+// making boxes & special lists
+
 
 // alerts etc.
 
@@ -255,22 +366,6 @@ ol {
 }
 
 
-.reveal
-  div.sourceCode
-  pre
-  code.has-line-highlights
-  > span:not(.highlight-line) {
-  opacity: 0.1 !important;
-}
-
-.reveal
-  div.sourceCode
-  pre
-  code.has-line-highlights
-  > span.highlight-line {
-  font-weight: bold;
-}
-
 ol li {
   counter-increment: my-counter;
   padding-left: 40px;
@@ -362,7 +457,8 @@ ol li::before {
 .small { font-size: 70% }
 .tiny { font-size: 50% }
 
-// letterbox
+// letterbox styling 
+
 
 $slide-width: calc(var(--slide-width) + #{$border-leftright-width} * 2);
 $slide-height: calc(var(--slide-height) + #{$border-updown-width} * 2);
@@ -384,7 +480,7 @@ $slide-height: calc(var(--slide-height) + #{$border-updown-width} * 2);
 }
 
 .quarto-dark {
-  background-color: #404040;
+  background-color: #fefdfa;
 }
 
 html.print-pdf .quarto-light {
@@ -428,3 +524,35 @@ html.print-pdf .quarto-dark {
 .background-image-div {
   @include full-screen;
 }
+
+.background-video-div {
+  @include full-screen;
+  max-width: none !important;
+  max-height: none !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.background-iframe-div {
+  @include full-screen;
+  max-width: none !important;
+  max-height: none !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1 !important;
+}
+
+.reveal .slide-menu-button {
+  left: 8px - $border-leftright-width / 2 !important;
+  bottom: 8px - $border-updown-width / 2 !important;
+  pointer-events: auto;
+}
+
+.reveal .progress {
+  z-index: 100;
+  bottom: - $border-updown-width;
+  width: $slide-width !important;
+  left: -$border-leftright-width;
+}
+
