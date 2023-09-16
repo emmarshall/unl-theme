@@ -1,6 +1,7 @@
 ---
-title: A Title
+title: A Title for Slides
 subtitle: A subtitle
+from: markdown+emoji
 format: unl-revealjs
 author:
   - name: Emma Marshall, JD, MA
@@ -12,35 +13,30 @@ date: last-modified
 library(tidyverse)
 ```
 
-::: red-box
-
-Centered box
-
-:corn: 
-
-To make a point or whatever
-
-:::
-
-## Boxes [3]{.circle}
-
-<br><br>
-
-::: info-box
-hello 
-:::
+## Boxes [1]{.circle} 
 
 <br>
 
+::: columns
+
+::: {.column width="50%"}
 ::: cream-box
-
 Centered box
-
 :corn: 
-
 To make a point or whatever
-
 :::
+:::
+
+::: {.column width="50%"}
+
+::: red-box
+Centered box
+:corn: 
+To make a point or whatever
+:::
+:::
+:::
+
 ## [Example 1]{.example} :corn: Here is how I can tell a story {auto-animate=true auto-animate-easing="ease-in-out"}
 
 ::: info-box
@@ -79,7 +75,7 @@ You can embed code like this:
 You can also add `text marked as code`!
 
 
-# New topic! {background-color="#474747"}{.empty}
+# New topic!
 
 
 ## Tabset example {#sec-summary}
