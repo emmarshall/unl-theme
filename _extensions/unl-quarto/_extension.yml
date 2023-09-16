@@ -19,7 +19,7 @@ contributes:
           fig.align: "center"
           fig.show: "hold"
     revealjs:
-      theme: [dark, unl.scss]
+      theme: unl.scss
       logo: logo.svg
       menu:
         side: left

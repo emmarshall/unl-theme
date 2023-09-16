@@ -2,12 +2,7 @@
 title: A Title
 subtitle: A subtitle
 from: markdown+emoji
-execute:
-  cache: true
-format: 
-  unl-quarto-revealjs:
-    width: 1280
-    height: 720
+format: unl-quarto-revealjs
 author:
   - name: Emma Marshall, JD, MA
     affiliations: University of Nebraska-Lincoln
