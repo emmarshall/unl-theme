@@ -2,7 +2,8 @@
 title: A Title
 subtitle: A subtitle
 from: markdown+emoji
-format: unl-quarto-revealjs
+format: 
+  unl-revealjs: default
 author:
   - name: Emma Marshall, JD, MA
     affiliations: University of Nebraska-Lincoln
