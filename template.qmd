@@ -2,7 +2,9 @@
 title: A Title for Slides
 subtitle: A subtitle
 from: markdown+emoji
-format: unl-revealjs
+format: 
+  unl-revealjs:
+    incremental: true
 author:
   - name: Emma Marshall, JD, MA
     affiliations: University of Nebraska-Lincoln
@@ -13,43 +15,80 @@ date: last-modified
 library(tidyverse)
 ```
 
-## Boxes [1]{.circle} 
+## Yaml Options
+
+-   Slides will proceed incrementally
+-   Allows use of [emoji's](https://github.com/markdown-templates/markdown-emojis)
+
+``` yaml
+title: A Title for Slides
+subtitle: A subtitle
+from: markdown+emoji
+format: 
+  unl-revealjs:
+    incremental: true
+author:
+  - name: Emma Marshall, JD, MA
+    affiliations: University of Nebraska-Lincoln
+date: last-modified
+```
+
+## Can override deault options
+
+::: nonincremental
+-   Not incremental
+-   Just a list
+:::
+
+## Make side-by-side columns
+
+::: columns
+::: {.column width="40%"}
+Left column ![](fitz.png){.center}
+:::
+
+::: {.column width="60%"}
+Right column ![](fitz.png){.center}
+:::
+:::
+
+## Slide with a pause
+
+content before the pause
+
+. . .
+
+content after the pause
+
+## Boxes [1]{.circle}
 
 <br>
 
 ::: columns
-
 ::: {.column width="50%"}
 ::: cream-box
-Centered box
-:corn: 
-To make a point or whatever
+Centered box :corn: To make a point or whatever
 :::
 :::
 
 ::: {.column width="50%"}
-
 ::: red-box
-Centered box
-:corn: 
-To make a point or whatever
+Centered box :corn: To make a point or whatever
 :::
 :::
 :::
 
-## [Example 1]{.example} :corn: Here is how I can tell a story {auto-animate=true auto-animate-easing="ease-in-out"}
+## [Example 1]{.example} :corn: Here is how I can tell a story {auto-animate="true" auto-animate-easing="ease-in-out"}
 
 ::: info-box
-hello 
+hello
 :::
+
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished presentation.
-To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
 > This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
-
-
 
 ## Bullets
 
@@ -60,10 +99,87 @@ When you click the **Render** button a document will be generated that includes:
 
 > This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
 
+## Too much content? {.scrollable}
+
+::: nonincremental
+When you have a lot of content on a slide you can make off-slide content available by:
+
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+-   Making the slide `scrollable`
+:::
+
+Hi! ![](fitz.png)
+
+## Too much content? {.tiny}
+
+::: nonincremental
+Or you could just make the content smaller:
+
+-   Making the slide `smaller`
+-   Making the slide `smaller`
+-   Making the slide `smaller`\
+-   Making the slide `smaller`
+-   Making the slide `smaller`
+-   Making the slide `smaller`
+-   Making the slide `smaller`
+-   Making the slide `smaller`\
+:::
+
+Hi! ![](fitz.png){width="50"}
+
+## Sizing options
+
+-   `.huge` - font-size: 200%
+-   `.extra-large` - font-size: 150%
+-   `.large` - font-size: 130%
+-   `.medium` - font-size: 115%
+-   `.small` - font-size: 70%
+-   `.tiny` - font-size: 50%
+
+## Set absolute position for content
+
+![](fitz.png){.absolute top="200" left="0" width="250" height="300"}
+
+![](fitz.png){.absolute top="50" right="50" width="200" height="250"}
+
+![](fitz.png){.absolute bottom="0" right="50" width="300" height="300"}
+
+## Or animate with `.r-stack`
+
+::: r-stack
+![](fitz.png){.fragment width="200" height="300"}
+
+![](fitz.png){.fragment width="450" height="450"}
+
+![](fitz.png){.fragment width="400" height="400"}
+:::
+
+## This will be centered {.center}
+
+This text is moved as well
+
+## Slide Title
+
+Here is an image:
+
+![](fitz.png){.r-stretch}
+
+Some text after the image.
+
 ## Code
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
-You can embed code like this:
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
 #| echo: true
@@ -74,9 +190,7 @@ You can embed code like this:
 
 You can also add `text marked as code`!
 
-
 # New topic!
-
 
 ## Tabset example {#sec-summary}
 
@@ -90,34 +204,20 @@ Content here for tabset 1 :)
 More content here, for tabset 2 :)
 :::
 
-## Incremental content
-
-
-*Animate Stuff*
-
-. . .
-
-
-Use `. . .` to separate content as an incremental slide!
-
-. . .
-
-Bye!
-
 ## Numbers
 
-1. **thing 1**
-1. *thing 2*
-1. ~~thing 3~~
-1. ~~thing 4~~
+1.  **thing 1**
+2.  *thing 2*
+3.  ~~thing 3~~
+4.  ~~thing 4~~
 
 ## Non-Incremental lists
 
-::: {.nonincremental}
-- **thing 1**
-- *thing 2*
-- ~~thing 3~~
-::: 
+::: nonincremental
+-   **thing 1**
+-   *thing 2*
+-   ~~thing 3~~
+:::
 
 ## You can add R code
 
@@ -173,20 +273,17 @@ knitr::kable(tab)
 :::
 
 ## Diagrams with Mermaid!
-<center>
-Create using [Mermaid live editor](https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh1t5fCFurN6SFo7AztfDBGpKj_fcd62c0pvM_zhkzY-JYxx-7px0ZTFKhK5SDNoS50NL1Y6m-QZZ_ziQWsd_ya4fhx8tBrH4Jx993mH1cJium8agyijXssGyre_R_HM5T1mYL4cPtLqtHP8FWbi07n_xMdObW-647yjrKGIhQU3wru0XK0ZNr0_rQmCkWzZYV5WlvuaHiKQuWWpNIg_vpyDeYSB97jEFoSLg3dI9ktXH4B_cJWqw)
-</center>
 
+<center>Create using [Mermaid live editor](https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh1t5fCFurN6SFo7AztfDBGpKj_fcd62c0pvM_zhkzY-JYxx-7px0ZTFKhK5SDNoS50NL1Y6m-QZZ_ziQWsd_ya4fhx8tBrH4Jx993mH1cJium8agyijXssGyre_R_HM5T1mYL4cPtLqtHP8FWbi07n_xMdObW-647yjrKGIhQU3wru0XK0ZNr0_rQmCkWzZYV5WlvuaHiKQuWWpNIg_vpyDeYSB97jEFoSLg3dI9ktXH4B_cJWqw)</center>
 
-## Example slide 
+## Example slide
 
 ### This is a subtitle
 
-Here we have some text that may run over several lines of the slide frame,
-depending on how long it is.
+Here we have some text that may run over several lines of the slide frame, depending on how long it is.
 
-- first item 
-    - A sub item
+-   first item
+    -   A sub item
 
 Next, we'll brief review some theme-specific components.
 
@@ -196,14 +293,12 @@ Next, we'll brief review some theme-specific components.
 
 Special classes for emphasis
 
-- `.alert` class for default emphasis, e.g. [important note]{.alert}.
-- `.fg` class for custom color, e.g. [important note]{.fg}.
-- `.bg` class for custom background, e.g. [important note]{.bg style="--col: #e64173"}.
-- `.bg` class for custom background, e.g. [important note]{.bg}.
+-   `.alert` class for default emphasis, e.g. [important note]{.alert}.
+-   `.fg` class for custom color, e.g. [important note]{.fg}.
+-   `.bg` class for custom background, e.g. [important note]{.bg style="--col: #e64173"}.
+-   `.bg` class for custom background, e.g. [important note]{.bg}.
 
-Cross-references
-- `.button` class provides a Beamer-like button, e.g.
-[[Summary]{.button}](#sec-summary)
+Cross-references - `.button` class provides a Beamer-like button, e.g. [[Summary](#sec-summary)]{.button}
 
 ## Fragments
 
@@ -221,7 +316,7 @@ Fade in \> turn green \> strike \> fade out
 :::
 :::
 
-----
+------------------------------------------------------------------------
 
 ::: r-fit-text
 [can customize text]{style="color: hotpink;"}
@@ -244,6 +339,7 @@ These images will be placed behind most other content
 ::: columns
 ::: {.column width="55%"}
 :::
+
 ::: {.column width="45%"}
 It is therefore recommened that you use [multiple columns](https://quarto.org/docs/presentations/index.html#multiple-columns) to only have text on the background area
 :::
@@ -255,6 +351,6 @@ It is therefore recommened that you use [multiple columns](https://quarto.org/do
 
 You can use the function `pagedown::chrome_print()` to print the HTML version into a PDF!
 
-```r
+``` r
 pagedown::chrome_print("path-to-file.html")
 ```

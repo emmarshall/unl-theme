@@ -18,25 +18,23 @@ $orange: #f58a1f !default;
 $green: #bccb2a !default;
 $purple: #a5228d !default;
 $light-grey: #cccccc !default;
-$dark-steel: #393D47 !default;
+$dark-steel: #010B13 !default;
 
 $accent: $unl-red;
 $accent2: $yellow;
 $right-arrow: "\2192"; // Unicode character for right arrow
 
-// fonts
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+// load fonts from UNL 2023 refresh
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500);
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-$font-family-serif: 'Manrope' serif !default;
-
-$presentation-font-size-root: 36px;
-$presentation-heading-color: $dark-steel !default;
-$presentation-heading-font-weight: 700;
+// main text
+$font-family-serif: 'Work Sans' sans-serif !default;
 
 // headings
-$presentation-heading-font: 'Architects Daughter', sans-serif !default;
+$presentation-heading-font: 'Source Serif 4', sans-serif !default;
+$presentation-heading-color: $dark-steel !default;
+$presentation-heading-font-weight: 700;
 
 $h1-font-size: 1.5em !default;
 $h2-font-size: 1.25em !default;
@@ -44,13 +42,21 @@ $h3-font-size: 1em !default;
 
 //code
 $code-color: $dark-steel !default;
-$font-family-monospace: 'IBM Plex Mono', Monaco, monospace !default;
+$font-family-monospace: 'Oswald', sans-serif !default;
+$code-block-border-color: $grey !default;
+$code-color: $unl-red	!default;	
+$code-bg: $unl-cream !default;	
+
 
 // quarto variables
 $body-bg: #fff !default;
 $body-color: $dark-steel !default;
 $link-color: $unl-red !default;
+$link-color-hover: $grey !default;
 $presentation-heading-color: $unl-red !default;
+
+//tabsets
+$tabset-border-color: $unl-cream !default;
 
 /*-- scss:rules --*/
 
@@ -65,8 +71,8 @@ $presentation-heading-color: $unl-red !default;
 // logo size
 
 .reveal .slide-logo {
-  height: 60px !important;
-  width: 60px !important;
+  height: 50px !important;
+  width: 50px !important;
   max-width: unset !important;
   max-height: unset !important;
 }
@@ -80,7 +86,7 @@ $presentation-heading-color: $unl-red !default;
   margin-top: 1.25em;
 }
 
-// title and headings
+// title page
 
 #title-slide {
   text-align: left;
@@ -131,7 +137,6 @@ p.subtitle:after {
 	margin: 25px 0 25px;
 }
 }
-
 
 // boxes & fun lists
 
@@ -261,7 +266,8 @@ h2::after.title {
 }
 
 .reveal .slide-number {
-  font-family: $presentation-heading-font;
+  font-family: $font-family-monospace;
+  color: $grey;
 }
 
 .reveal .panel-tabset [role=tab] {
@@ -355,18 +361,6 @@ img {
   margin-right: auto;
 }
 
-ul {
-  font-size: 125%;
-  list-style-type: none;
-  text-align: left;
-  font-weight: 500;
-  padding-top: 40px;
-}
-
-ul li {
-  padding-bottom: 40px;
-}
-
 ol {
   counter-reset: my-counter;
   list-style: none;
@@ -451,7 +445,7 @@ ol li::before {
 }
 
 .button:hover {
-  background-color: $unl-red;
+  background-color: $light-grey;
   border-color: $dark-steel;
 }
 
@@ -460,7 +454,7 @@ ol li::before {
   margin-right: 5px;
 }
 
-
+// sizeing options
 .huge { font-size: 200% }
 .extra-large { font-size: 150% }
 .large { font-size: 130% }

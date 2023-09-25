@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.433">
 
   <meta name="author" content="Emma Marshall, JD, MA">
-  <meta name="dcterms.date" content="2023-09-15">
+  <meta name="dcterms.date" content="2023-09-25">
   <title>A Title for Slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -405,7 +405,50 @@ Emma Marshall, JD, MA
     </div>
 </div>
 
-  <p class="date">September 15, 2023</p>
+  <p class="date">September 25, 2023</p>
+</section>
+<section id="yaml-options" class="slide level2">
+<h2>Yaml Options</h2>
+<ul>
+<li class="fragment">Slides will proceed incrementally</li>
+<li class="fragment">Allows use of <a href="https://github.com/markdown-templates/markdown-emojis">emoji’s</a></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> A Title for Slides</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> A subtitle</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">from</span><span class="kw">:</span><span class="at"> markdown+emoji</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="at">  </span><span class="fu">unl-revealjs</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="at">    </span><span class="fu">incremental</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="fu">author</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Emma Marshall, JD, MA</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="at">    </span><span class="fu">affiliations</span><span class="kw">:</span><span class="at"> University of Nebraska-Lincoln</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> last-modified</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="can-override-deault-options" class="slide level2">
+<h2>Can override deault options</h2>
+<div>
+<ul>
+<li>Not incremental</li>
+<li>Just a list</li>
+</ul>
+</div>
+</section>
+<section id="make-side-by-side-columns" class="slide level2">
+<h2>Make side-by-side columns</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Left column <img data-src="fitz.png" class="center"></p>
+</div><div class="column" style="width:60%;">
+<p>Right column <img data-src="fitz.png" class="center"></p>
+</div>
+</div>
+</section>
+<section id="slide-with-a-pause" class="slide level2">
+<h2>Slide with a pause</h2>
+<p>content before the pause</p>
+<div class="fragment">
+<p>content after the pause</p>
+</div>
 </section>
 <section id="boxes-1" class="slide level2">
 <h2>Boxes <span class="circle">1</span></h2>
@@ -446,11 +489,87 @@ Emma Marshall, JD, MA
 <p>This is part of the <a href="https://quarto.org/docs/presentations/">Quarto documentation</a>.</p>
 </blockquote>
 </section>
+<section id="too-much-content" class="slide level2 scrollable">
+<h2>Too much content?</h2>
+<div>
+<p>When you have a lot of content on a slide you can make off-slide content available by:</p>
+<ul>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+<li>Making the slide <code>scrollable</code></li>
+</ul>
+</div>
+<p>Hi! <img data-src="fitz.png"></p>
+</section>
+<section id="too-much-content-1" class="slide level2 tiny">
+<h2>Too much content?</h2>
+<div>
+<p>Or you could just make the content smaller:</p>
+<ul>
+<li>Making the slide <code>smaller</code></li>
+<li>Making the slide <code>smaller</code></li>
+<li>Making the slide <code>smaller</code><br>
+</li>
+<li>Making the slide <code>smaller</code></li>
+<li>Making the slide <code>smaller</code></li>
+<li>Making the slide <code>smaller</code></li>
+<li>Making the slide <code>smaller</code></li>
+<li>Making the slide <code>smaller</code><br>
+</li>
+</ul>
+</div>
+<p>Hi! <img data-src="fitz.png" width="50"></p>
+</section>
+<section id="sizing-options" class="slide level2">
+<h2>Sizing options</h2>
+<ul>
+<li class="fragment"><code>.huge</code> - font-size: 200%</li>
+<li class="fragment"><code>.extra-large</code> - font-size: 150%</li>
+<li class="fragment"><code>.large</code> - font-size: 130%</li>
+<li class="fragment"><code>.medium</code> - font-size: 115%</li>
+<li class="fragment"><code>.small</code> - font-size: 70%</li>
+<li class="fragment"><code>.tiny</code> - font-size: 50%</li>
+</ul>
+</section>
+<section id="set-absolute-position-for-content" class="slide level2">
+<h2>Set absolute position for content</h2>
+<p><img data-src="fitz.png" class="absolute" style="top: 200px; left: 0px; width: 250px; height: 300px; "></p>
+<p><img data-src="fitz.png" class="absolute" style="top: 50px; right: 50px; width: 200px; height: 250px; "></p>
+<p><img data-src="fitz.png" class="absolute" style="bottom: 0px; right: 50px; width: 300px; height: 300px; "></p>
+</section>
+<section id="or-animate-with-.r-stack" class="slide level2">
+<h2>Or animate with <code>.r-stack</code></h2>
+<div class="r-stack">
+<p><img data-src="fitz.png" class="fragment" width="200" height="300"></p>
+<p><img data-src="fitz.png" class="fragment" width="450" height="450"></p>
+<p><img data-src="fitz.png" class="fragment" width="400" height="400"></p>
+</div>
+</section>
+<section id="this-will-be-centered" class="slide level2 center">
+<h2>This will be centered</h2>
+<p>This text is moved as well</p>
+</section>
+<section id="slide-title" class="slide level2">
+<h2>Slide Title</h2>
+<p>Here is an image:</p>
+<img data-src="fitz.png" class="r-stretch">
+<p>Some text after the image.</p>
+</section>
 <section id="code" class="slide level2">
 <h2>Code</h2>
 <p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
@@ -479,16 +598,6 @@ Emma Marshall, JD, MA
 </div>
 </div>
 </section>
-<section id="incremental-content" class="slide level2">
-<h2>Incremental content</h2>
-<p><em>Animate Stuff</em></p>
-<div class="fragment">
-<p>Use <code>. . .</code> to separate content as an incremental slide!</p>
-</div>
-<div class="fragment">
-<p>Bye!</p>
-</div>
-</section>
 <section id="numbers" class="slide level2">
 <h2>Numbers</h2>
 <ol type="1">
@@ -514,7 +623,7 @@ Emma Marshall, JD, MA
 <section id="and-show-the-results-as-well" class="slide level2">
 <h2>And show the results, as well :)</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="template_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch quarto-figure-center"></section>
@@ -524,17 +633,17 @@ Emma Marshall, JD, MA
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>tab <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>  tidyr<span class="sc">::</span><span class="fu">drop_na</span>(species) <span class="sc">|&gt;</span> </span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">group_by</span>(species) <span class="sc">|&gt;</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb4-5"><a href="#cb4-5"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb4-6"><a href="#cb4-6"></a>    <span class="at">mean_heigth =</span> <span class="fu">round</span>(<span class="fu">mean</span>(height, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
-<span id="cb4-7"><a href="#cb4-7"></a>    <span class="at">mean_mass =</span> <span class="fu">round</span>(<span class="fu">mean</span>(mass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb4-8"><a href="#cb4-8"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb4-9"><a href="#cb4-9"></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> n, <span class="at">n =</span> <span class="dv">4</span>) </span>
-<span id="cb4-10"><a href="#cb4-10"></a></span>
-<span id="cb4-11"><a href="#cb4-11"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>tab <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>  tidyr<span class="sc">::</span><span class="fu">drop_na</span>(species) <span class="sc">|&gt;</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">group_by</span>(species) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-5"><a href="#cb5-5"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="at">mean_heigth =</span> <span class="fu">round</span>(<span class="fu">mean</span>(height, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb5-7"><a href="#cb5-7"></a>    <span class="at">mean_mass =</span> <span class="fu">round</span>(<span class="fu">mean</span>(mass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-8"><a href="#cb5-8"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> n, <span class="at">n =</span> <span class="dv">4</span>) </span>
+<span id="cb5-10"><a href="#cb5-10"></a></span>
+<span id="cb5-11"><a href="#cb5-11"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
@@ -632,7 +741,7 @@ Create using <a href="https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh
 <li class="fragment"><code>.bg</code> class for custom background, e.g.&nbsp;<span class="bg" style="--col: #e64173">important note</span>.</li>
 <li class="fragment"><code>.bg</code> class for custom background, e.g.&nbsp;<span class="bg">important note</span>.</li>
 </ul>
-<p>Cross-references - <code>.button</code> class provides a Beamer-like button, e.g. <a href="#/sec-summary"><span class="button">Summary</span></a></p>
+<p>Cross-references - <code>.button</code> class provides a Beamer-like button, e.g.&nbsp;<span class="button"><a href="#/sec-summary">Summary</a></span></p>
 </section>
 <section id="fragments" class="slide level2">
 <h2>Fragments</h2>
@@ -678,7 +787,7 @@ Create using <a href="https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh
 <section id="exporting-into-pdf" class="slide level2">
 <h2>Exporting into PDF</h2>
 <p>You can use the function <code>pagedown::chrome_print()</code> to print the HTML version into a PDF!</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>pagedown<span class="sc">::</span><span class="fu">chrome_print</span>(<span class="st">"path-to-file.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>pagedown<span class="sc">::</span><span class="fu">chrome_print</span>(<span class="st">"path-to-file.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img src="_extensions/unl/logo.svg" class="slide-logo r-stretch"><div class="footer footer-default">
 
