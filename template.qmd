@@ -231,7 +231,7 @@ g <- starwars |>
   theme_light()
 ```
 
-## And show the results, as well :)
+## :bar_chart: And show results as graph or chart 
 
 ```{r}
 #| fig.align: center
@@ -322,10 +322,11 @@ Fade in \> turn green \> strike \> fade out
 [can customize text]{style="color: hotpink;"}
 :::
 
-## Slide Title {background-color="black" background-image="https://github.com/emmarshall/unl-theme/blob/main/fitz.png" background-size="100px" background-repeat="repeat"}
+## Backgroud image {background-image="fitz.png" background-opacity="0.2"}
 
 This slide's background image will be sized to 100px and repeated.
 
+## Slide Title {background-color="aquamarine"}
 
 ## Exporting into PDF
 
